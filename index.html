@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
 </head>
 <body>
-    
+    <h2 id="ori">Header</h2>
     <script>
 
         //7/29/2024 Quick review 
@@ -155,12 +156,13 @@
         
         // Solution
         
-        /* 
+        /*
          'use strict';
 
         let name = prompt("What is your name?", "");
-        alert(name);
- */
+        alert(`your name is ${name}`);
+        */
+ 
        
 
         // This is different
@@ -175,7 +177,7 @@
 
         // Prompt
         /* let test = prompt("Test");
-        alert (test); */
+        alert (test);
 
         // Conversion
 
@@ -233,10 +235,10 @@
         let c = ++a; // ? //2
         let d = b++; // ? //1 */
 
-        /* // Correction
+         // Correction
 
         //The answer is:
-
+        /*
         a = 2
         b = 2
         c = 2
@@ -247,7 +249,8 @@
         alert( b++ ); // 1, postfix form returns the old value
 
         alert( a ); // 2, incremented once
-        alert( b ); // 2, incremented once */
+        alert( b ) // 2, incremented once 
+        */
 
         /* //Task 2
 
@@ -272,11 +275,10 @@
         null + 1 // 1
         undefined + 1 // 1 correction - NaN
         " \t \n" - 2 // ?  correction = -2 */
-
         /* b = "" + 1 + 0;
         alert (b); */
-
-        //Comprisons > < =
+        
+//Comprisons > < =
         /* 
         > - greater than
         < - less than
@@ -295,7 +297,7 @@
         --Example --- alert( 'Z' > 'A' ); // true
         --alert( 'Glow' > 'Glee' ); // true
         --alert( 'Bee' > 'Be' ); // true)
-        a
+        
         "2" > "12" //false //correction - true 
         undefined == null // True
         undefined === null //false
@@ -303,7 +305,7 @@
         null === +"\n0\n" //false
         */
 
-        /* let age = prompt('age?', 18);
+       /* let age = prompt('age?', 18);
 
         let message = (age < 3) ? 'Hi, baby!' :
         (age < 18) ? 'Hello!' :
@@ -318,14 +320,22 @@
 
         //If the visitor enters “ECMAScript”, then output “Right!”, otherwise – output: “You don’t know? ECMAScript!”
 
-        /* let quiz = prompt ('What is the "official" name of JavaScript?', '');
-        
+       /*  
+        let quiz = prompt ('What is the "official" name of JavaScript?', '');
         if (quiz == 'ECMAScript') {
             alert('Right!');
         } else {
             alert('You don not know? ECMAScript!');
         } */
         
+        /*
+        let quiz = ECMAScript = prompt ('What is the your age?', '20');
+        let esi = (quiz < 20) ? 'getting there':
+        (quiz = 20) ? 'big you, lol':
+        'time flies, eh!';
+
+        alert(esi); */
+
         //Task 3
         //Rewrite this if using the conditional operator '?':
 
@@ -335,8 +345,8 @@
         result = 'Below';
         } else {
         result = 'Over';
-        }*/
-
+        }
+ */
         /*let result = (a + b < 4) ? 'Below' : 'Over'; */
         
         //Task 4
@@ -344,8 +354,12 @@
        // Rewrite if..else using multiple ternary operators '?'.
         //for readability, it’s recommended to split the code into multiple lines.
 
-        /* let message;
-
+         
+    
+        
+/*          let message;
+let login = prompt('who?', '');
+        
         if (login == 'Employee') {
          message = 'Hello';
         } else if (login == 'Director') {
@@ -355,18 +369,42 @@
         } else {
         message = '';
         
-    } */
-       /*  let message;
-        login == ('Employee') ? 'Hello'; X
-        */
-/* 
-        //Solution
+    } 
 
+    alert (message); */
+
+
+
+     /*     let message;
+        login == ('Employee') ? 'Hello'; X */
+       
+
+        //Solution
+/* 
         let message = (login == 'Employee') ? 'Hello' :
         (login == 'Director') ? 'Greetings' :
         (login == '') ? 'No login' :
-        ''; */
+        '';
+ */
+
+/* let age = prompt('How old are you?', '');
+let accessAllowed = (age>18) ? true:false;
+alert (accessAllowed); */
+
+/* let value = prompt('what is the official name of javascript', '');
+if (value == 'ECMAScript') {
+    alert('Right');
+}else {
+    alert('wrong')
+} */
+
+/* let value = prompt('what is the official name of javascript', '');
+let answer = (value == 'ECMAScript') ? 'right' : 'wrong';
+alert (answer); */
 
     </script>
+    <script src="./script/logop.js"></script>
+    <script src="./script/Nullishop.js"></script>
+    <script src="./script/loop.js"></script>
 </body>
 </html>
